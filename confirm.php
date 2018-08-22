@@ -17,19 +17,19 @@
 <body>
 <form method="post" action="done.php">
   <div class="element_wrap">
-    <label class="">氏名:<?php echo $name; ?></label>
+    <h3 class="">氏名:<?php echo $name; ?></h3>
   </div>
   <div class="element_wrap">
-    <label>ふりがな:<?php echo $furigana; ?></label>
+    <h3 class="">ふりがな:<?php echo $furigana; ?></h3>
   </div>
   <div class="element_wrap">
-    <label>都道府県:<?php echo $district; ?></label>
+    <h3 class="">都道府県:<?php echo $district; ?></h3>
   </div>
   <div class="element_wrap">
-    <label>住所:<?php echo $address; ?></label>
+    <h3 class="">住所:<?php echo $address; ?></h3>
   </div>
   <div class="element_wrap">
-    <label>メールアドレス:<?php echo $email; ?></label>
+    <h3 class="">メールアドレス:<?php echo $email; ?></h3>
   </div>
 
   <input type="submit" class = "button1" name="btn_submit" value="問い合わせ完了">

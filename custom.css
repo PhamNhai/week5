@@ -32,6 +32,10 @@ textarea {
   height: 5em;
 }
 
+.element_wrap {
+  margin-left: 30px;
+}
+
 .button1 {
   padding-left: 90px; 
   cursor: pointer;

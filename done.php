@@ -49,8 +49,8 @@ if($_POST["btn_submit"]) {
         $results = mysqli_query($conn,"SELECT id FROM information WHERE email='$email'");
         $username_exist = mysqli_num_rows($results); 
         if($username_exist) {
-            echo "<div class = 'center'>このeメールアドレスを持つアカウントがありました。</div>";
-            include 'index.php';
+            echo "<div class = 'center'>この '$email'のeメールアドレスを持つアカウントがありました。</div>";
+            include 'confirm.php';
         }else{
 
             $sql = "INSERT INTO information (name, furigana, district, address, email, password) VALUES ('". $conname . "','" . $furigana ."','" . $district ."','" . $address ."','" . $email ."', '" . $hashed_password ."')";
