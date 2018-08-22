@@ -20,7 +20,18 @@ input, textarea {
   font: 1em sans-serif;
   width: 300px;
   box-sizing: border-box;
-  border: 1px solid #999;
+  /*border: 1px solid #999;*/
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input:focus, textarea:focus {
@@ -48,7 +59,7 @@ textarea {
   padding: 7px 12px;
   border-radius: 8px;
   color: red;
-  margin-left: 95px;
+  margin-left: 135px;
 }
 .button2 {
   padding-left: 90px; 
@@ -62,7 +73,7 @@ textarea {
   padding: 7px 12px;
   border-radius: 8px;
   color: black;
-  margin-left: 95px;
+  margin-left: 135px;
 }
 
 button {
