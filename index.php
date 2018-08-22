@@ -27,7 +27,7 @@
   </div>
   <div>
     <label for="mail" >メールアドレス:</label>
-    <input type="mail" id="mail" name="user_email" required />
+    <input type="email" id="mail" name="user_email" required />
   </div>
   <div>
     <label for="password" >パスワード:</label>

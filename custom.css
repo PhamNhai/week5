@@ -65,9 +65,10 @@ button {
   margin-left: .5em;
 }
 
-.success_login {
+.center {
   margin-top: 40px;
   text-align: center;
+  font-weight: bold;
 }
 
 #message {
