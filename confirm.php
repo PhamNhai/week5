@@ -1,10 +1,25 @@
 <?php
-    $name = $_POST['user_name'];
-    $furigana = $_POST['user_furigana'];
-    $district = $_POST['user_district'];
-    $address = $_POST['user_address'];
-    $email = $_POST['user_email'];
-    $password = $_POST['user_password'];
+    // header("X-XSS-Protection: 0");
+    // $name = $_POST['user_name'];
+    // $furigana = $_POST['user_furigana'];
+    // $district = $_POST['user_district'];
+    // $address = $_POST['user_address'];
+    // $email = $_POST['user_email'];
+    // $password = $_POST['user_password'];
+
+      $name = kiemTra_input($_POST["user_name"]);
+      $furigana = kiemTra_input($_POST["user_furigana"]);
+      $district = kiemTra_input($_POST["user_district"]);
+      $address = kiemTra_input($_POST["user_address"]);
+      $email = kiemTra_input($_POST["user_email"]);
+      $password = kiemTra_input($_POST["user_password"]);
+
+    function kiemTra_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+    }
 ?>
 
 <!DOCTYPE html>
