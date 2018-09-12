@@ -1,5 +1,5 @@
 <?php
-    require('show_users.php');
+    require('get_users.php');
     $sql = "SELECT * FROM information";
     if($conn->query($sql)->num_rows > 0){
         $name = array();

@@ -15,11 +15,21 @@
   </div>
   <div>
     <label for="furigana" >ふりがな:</label>
-    <input type="text" id="furigana" name="user_furigana" required/>
+    <input type="text" id="furigana"  name="user_furigana" required/>
   </div>
   <div>
     <label for="district" >都道府県:</label>
-    <input type="text" id="district"  pattern="%$" title="nhập" name="user_district" required />
+    <input list="district" name="user_district" required />
+      <datalist id="district">
+        <option value="北海道">
+        <option value="青森県">
+        <option value="岩手県">
+        <option value="宮城県">
+        <option value="秋田県">
+        <option value="山形県">
+        <option value="福島県">
+        <option value="石川県">
+      </datalist>
   </div>
   <div>
     <label for="address" >住所:</label>
