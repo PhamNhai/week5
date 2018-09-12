@@ -11,7 +11,7 @@
 <form action="confirm.php" method="post"> 
   <div>
     <label for="name" >名前:</label>
-    <input type="text" id="name" name="user_name" required/>
+    <input type="text" id="name" pattern="(?=.{3,40}" name="user_name" required/>
   </div>
   <div>
     <label for="furigana" >ふりがな:</label>
@@ -19,7 +19,7 @@
   </div>
   <div>
     <label for="district" >都道府県:</label>
-    <input type="text" id="district" name="user_district" required />
+    <input type="text" id="district"  name="user_district" required />
   </div>
   <div>
     <label for="address" >住所:</label>

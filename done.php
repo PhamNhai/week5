@@ -1,4 +1,5 @@
 <?php
+
 if($_POST["btn_submit"]) {
     $servername = "localhost";
     $username = "root";
@@ -44,7 +45,6 @@ if($_POST["btn_submit"]) {
         $password = $_POST['user_password']; 
         $error_message = "";
         $hashed_password = SHA1('password');
-
 
         $results = mysqli_query($conn,"SELECT id FROM information WHERE email='$email'");
         $username_exist = mysqli_num_rows($results); 
